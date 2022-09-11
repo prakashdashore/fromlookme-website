@@ -1,0 +1,463 @@
+@font-face {
+    font-family: 'stan1';
+    src: url('./fonts/5f729a273e12c8c5fddc5a82_VanguardCF-DemiBold.woff') format("woff");
+    
+}
+@font-face {
+    font-family: 'stan2';
+    src: url('./fonts/5f7b8f7d4bbab74ecfd880cc_soehne-web-halbfett.woff') format("woff");
+    
+}
+
+
+@font-face {
+    font-family: 'stan3';
+    src: url('./fonts/5f7b8f7d96142d55ee9f00b2_soehne-web-buch.woff') format("woff");
+    
+}
+
+
+
+@font-face {
+    font-family: 'anny';
+    src: url('./fonts/bandeins.ttf') ;
+    
+}
+
+
+html{
+    font-size: 10px;
+}
+*{
+    /* cursor: none; */
+    padding: 0;
+    margin: 0;
+
+    box-sizing: border-box;
+
+}
+
+body,html{
+    overflow-x: hidden;
+    width: 100%;
+    height: 100%;
+    
+
+}
+#main{
+    
+    
+    position: relative;
+
+}
+
+
+
+
+
+
+
+    
+.page1{
+    overflow-x: hidden;
+    width: 100%;
+    height:660vh;
+    background-color:white;
+    position: relative;
+    transition: 0.6s all linear;
+
+}
+
+
+
+
+.main-content{
+    position: relative;
+    /* background-color: red; */
+    top: 15vh;
+    left: 5vw;
+    width: 48vw;
+    height: 50vh;
+
+
+}
+
+.main-content>h1{
+    /* background-color: aqua; */
+    font-size: 17rem;
+    font-weight: 8rem;
+    font-family:stan1;
+    letter-spacing: 0.1rem;
+
+}
+#uppernav{
+    top: 2vh;
+    left: 5vw;
+    width: 90vw;
+    height: 8vh;
+    position: absolute;
+    z-index: 9999;
+}
+
+
+.navbaar{
+    z-index: 999;
+    position: absolute;
+    width: 98vw;
+    height: 9rem;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+    margin-left: 1vw;
+
+}
+
+.logo{
+    position: absolute;
+
+    width: 3rem;
+    height: 3rem;
+
+}
+.logo>img{
+    position: absolute;
+
+    width: 5rem;
+    height: 5rem;
+
+}
+.menu{
+    z-index: 999;
+    
+    position: fixed;
+    margin-left:95vw;
+    width: 2.3rem;
+    height: 1.5rem;
+    border-top:2.5px solid black;
+    border-bottom:2.5px solid black;
+
+}
+
+
+.outermenu{
+    background-color:white;
+    z-index: 9;
+    
+    position: fixed;
+    margin-left:94.1vw;
+    width: 5rem;
+    height: 5rem;
+    border-radius: 50%;
+    
+
+}
+
+
+
+
+
+.cusor2>svg{
+    display: none;
+    /* transition:.5s cubic-bezier(0.075, 0.82, 0.165, 1); */
+    pointer-events: none;
+    width: 13rem;
+    height: 12rem;
+    
+    position: absolute;
+    transform: translate(-50%,-50%) scale(0);
+    top: 20vh;
+    left: 43vw;
+    z-index: 99;
+    animation: roll 6s linear infinite;
+
+}
+
+
+@keyframes roll{
+    0%{
+        transform:translate(-50%,-50%) rotate(0deg);
+    }
+
+    100%{
+        transform:translate(-50%,-50%) rotate(360deg);
+    }
+
+}
+.ero>svg{
+
+
+    transform: translate(-50%,-50%)scale(0);
+
+    pointer-events: none;
+
+    position: absolute;
+    
+    z-index: 999;
+    width: 3rem;
+    height:3rem;
+}
+
+
+.circle{
+    transform: translate(-50%,-50%) scale(0);
+    mix-blend-mode: difference;
+
+    z-index: 9999;
+
+    position: absolute;
+    pointer-events: none;
+    width: 2.5rem;
+    height: 2.5rem;
+    border: 4px solid white;
+    border-radius: 50%;
+    animation: scalling .6s infinite alternate;
+
+
+}
+@keyframes scalling{
+    0%{
+        transform:translate(-50%,-50%) scale(1);
+    }
+    100%{
+        transform:translate(-50%,-50%) scale(.5);
+    }
+}
+
+
+.circle2{
+    background-color: white;
+    mix-blend-mode: difference;
+    transform: translate(-50%,-50%) scale(0);
+    /* display: none; */
+
+    z-index: 9999;
+
+    position: absolute;
+    pointer-events: none;
+    width: 2.5rem;
+    height: 2.5rem;
+    border-radius: 50%;
+    /* transition-duration:10ms; */
+    /* transition-timing-function: ease-in-out; */
+
+}
+
+.images{
+    overflow: hidden;
+    position: relative;
+    width: 50vw;
+    height: 60vh;
+
+}
+
+.images>img{
+    width: 100%;
+    height: 100%;
+    background-position: center;
+    background-size: cover;
+
+}
+
+#img1{
+    top: 30vh;
+    left: 45vw;
+
+}
+
+
+#img2{
+    top: 40vh;
+    left: 5vw;
+
+}
+
+
+#img3{
+    top: 60vh;
+    left: 45vw;
+
+}
+
+
+
+#img4{
+    top: 73vh;
+    left: 5vw;
+
+}
+
+
+#img5{
+    top: 85vh;
+    left: 45vw;
+
+}
+
+
+#img6{
+    width: 50vw;
+    height: 90vh;
+    top: 110vh;
+    left: 5vw;
+
+}
+#box{
+    margin-top: 40vh;
+    margin-left: 185vh;
+    z-index: 999999999999;
+    position: fixed;
+    width: 4vw;
+    height: 24vh;
+    background-color: black;
+}
+#box>h5{
+    transform: translate(15px , 10px);
+    color: white;
+    font-family: stan1;
+    font-size: 40px;
+}
+
+#box>p{
+    transform:translate(0px ,80px) rotate(-90deg);
+    color: white;
+    font-family: stan2;
+    font-size: 15px;
+
+}
+
+
+#lastbox{
+    /* display: flex;
+    justify-content: center;
+    align-items: center; */
+
+    top: 600vh;
+    left: 10vw;
+
+    position: absolute;
+    width: 10vw;
+    height: 10vh;
+    /* background-color: aqua; */
+}
+
+
+
+
+.email{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    transform: translate(-50%,-50%);
+    position: absolute;
+
+    width:150px;
+    height:150px;
+    background-color: black;
+    border-radius: 50%;
+    
+
+
+}
+
+.email>p{
+    color: white;
+    font-size: 15px;
+    font-family: stan2;
+
+}
+
+
+#lets{
+    background-color:white;
+    overflow: hidden;
+    display: flex;
+    position: absolute;
+    top: 575vh;
+    /* height: 15vh; */
+   
+    left: 8vw;
+
+}
+
+.khali{
+    /* background-color: red; */
+   
+    width: 30vw;
+    height: 40vh;
+    position: absolute;
+    background-color: white;
+    top: 588vh;
+    /* height: 15vh; */
+   
+    left: 19vw;
+
+}
+#lets>h2{
+    margin-top: 2%;
+    overflow: hidden;
+
+    font-size: 80px;
+    font-family: stan1;
+}
+#lets>ul{
+    overflow: hidden;
+
+    list-style: none;
+    margin: 20px;
+
+}
+
+#lets>ul>li>span{
+    position: relative;
+    font-family: stan1;
+    font-size: 5vw;
+}
+
+
+
+
+#lets>ul>li{
+    top: -5%;
+    animation: slide 5s steps(4) infinite;
+    position: relative;
+
+
+    /* position: absolute; */
+}
+
+
+
+#lets>ul>li>span::after{
+    animation: typing 2s steps(50) infinite;
+    display: none;
+
+    left: 0%;
+
+    content: "";
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    /* border-left: 2px solid rgb(252, 4, 4); */
+    background-color:white;
+}
+
+
+
+@keyframes typing {
+    100%{
+        left: 100%;
+        /* margin: 0 -35px 0 -35px ; */
+    }
+    
+}
+
+
+
+@keyframes slide {
+    100%{
+        top: -100%;
+    }
+    
+}
